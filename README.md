@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=TviP5rCZiy0  <br />
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  <br />
 
 # * Add the URL of the remote server to local repo  <br />
-git remote add origin <linkToEmptyRepo>  <br />
+git remote add origin https://github.com/epifeni/touble_shooting_issues.git  <br />
 
 # * Pull from GitHub to Local Repo  <br />
 Go into the folder on the local computer  <br />
