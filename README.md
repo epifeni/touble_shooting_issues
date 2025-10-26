@@ -26,5 +26,12 @@ git init  <br />
 git add .  <br />
 git commit -m "Any Commit message or info."  <br />
 git branch -m main  <br />
-git push -u origin main  <br />
+git push -u origin main  OR git push origin main  <br />
 https://how.dev/answers/how-to-push-an-existing-project-to-github-using-git  <br />
+
+# * Pulling from remote to local repo <br />
+git pull  OR git pull origin main  <br />
+
+# * Rebase repo <br />
+git pull --rebase origin main <br />
+
