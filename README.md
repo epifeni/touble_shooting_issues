@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=Ow8jA-LAtak  <br />
 
 # Pushing to GitHub  <br />
 git init  <br />
-git status  
+git status  <br />
 git add . (stage all changes in the current directory) OR git add Example.md <br />
 git commit -m "initial commit"  <br />
 git branch -m main  <br />
@@ -37,46 +37,61 @@ git pull  OR git pull origin main  (pulling changes to the local repo) <br />
 # Rebase repo <br />
 git pull --rebase origin main <br />
 
-# Status of the repo
-git status
+# Status of the repo  <br />
+git status<br />
 
-# Check status
-git status
-git status --list
+# Check status<br />
+git status<br />
+git status --list<br />
 
-# Check for changes
-git diff
-git diff --cache (shows staged changes)
+# Check for changes<br />
+git diff<br />
+git diff --cache (shows staged changes)<br />
 
-# Getting Unstuck
-press "q" key
-type "clear"
+# Getting Unstuck<br />
+press "q" key<br />
+type "clear"<br />
 
-# Changing file names
-git mv gitStatusDemo.md newStatus.md (change the name of a file) -- changes will be updated in the staging area so no need for git add 
+# Changing file names<br />
+git mv gitStatusDemo.md newStatus.md (change the name of a file) -- changes will be updated in the staging area so no need for git add <br />
 
-# Git does not track empty folders
-.gitkeep (ad this file to an empty forder to track changes)
+# Git does not track empty folders<br />
+.gitkeep (ad this file to an empty forder to track changes) <br />
 
-# Going back to a previous commit (rollback)
-git restore --stage First_Folder/NewName.md (specify the file to be removed from staging)
-git restore --stage . (removes all files from the staging area)
-git restore . (wipes out all uncommited changes in one go)
+# Going back to a previous commit (rollback) <br />
+git restore --stage First_Folder/NewName.md (specify the file to be removed from staging)<br />
+git restore --stage . (removes all files from the staging area)<br />
+git restore . (wipes out all uncommited changes in one go)<br />
 
-# View commit history
-git log (press spacebar to see more logs, press "q" to escape back to the command promt)
-git show paste_the_commit_id (this shows the changes of a specific commit)
-git log -p (press spacebar to see more logs, press "q" to escape back to the command promt)
-git log --oneline (shorter, more readable and compact log history)
-git log --grep='Example' (searches for the keyword in the commit message)
-git log --branches (when using branches)
+# View commit history<br />
+git log (press spacebar to see more logs, press "q" to escape back to the command promt)<br />
+git show paste_the_commit_id (this shows the changes of a specific commit)<br />
+git log -p (press spacebar to see more logs, press "q" to escape back to the command promt)<br />
+git log --oneline (shorter, more readable and compact log history)<br />
+git log --grep='Example' (searches for the keyword in the commit message)<br />
+git log --branches (when using branches)<br />
 
-# Moving between branches 
-git log --oneline
-git checkout paste_the_commit_id (shows the older version of that commit - this is an older version of the project)
-git checkout main (go back to the main branch)
+# Moving between branches <br />
+git log --oneline<br />
+git checkout paste_the_commit_id (shows the older version of that commit - this is an older version of the project)<br />
+git checkout main (go back to the main branch)<br />
 
-# Revert commits
+# Revert commits - creates new commit to undo the previous one<br />
+git log --oneline<br />
+git revert paste_the_commit_id<br />
+
+# VS Code source control<br />
+click the + to add files to the staging area and enter commit message and sync changes<br />
+
+# Ignore files<br />
+list the file names in the .gitignore file<br />
+ignore a whole folder --- use the file path (e.g. Second_Folder/ OR Second_Folder/*.log)<br />
 
 
+# Creating branches<br />
+git branch logfolder (creates a new branch name --- name of the new branch is logfolder)<br />
+git checkout logfolder (move to the new branch)<br />
+git push --set-upsteam origin main logfolder (to create local branches in the remote repo)<br />
+
+# Merging branches<br />
 
